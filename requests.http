@@ -1,0 +1,28 @@
+###
+GET http://localhost:3000/api/country HTTP/1.1
+
+###
+GET http://localhost:3000/api/country/1 HTTP/1.1
+
+###
+POST http://localhost:3000/api/country
+Content-Type: application/json 
+
+{
+  "name": "Estados Unidos",
+  "capital": "Washinton DC",
+  "currency": "USD"
+}
+
+###
+PUT http://localhost:3000/api/country/3
+Content-Type: application/json 
+
+{
+  "name": "Colombia",
+  "capital": "Bogota",
+  "currency": "COP"
+}
+
+###
+DELETE http://localhost:3000/api/country/3 HTTP/1.1
